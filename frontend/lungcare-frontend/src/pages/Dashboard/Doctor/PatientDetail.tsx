@@ -144,7 +144,7 @@ const PatientDetailPage: React.FC = () => {
                             </div>
                           </div>
                           <div style={{ textAlign: "right" }}>
-                            <div style={{ fontSize: 22, fontWeight: 800, color: sc.text }}>{(scan.confidence * 100).toFixed(1)}%</div>
+                            <div style={{ fontSize: 22, fontWeight: 800, color: sc.text }}>{((scan.confidence ?? 0) * 100).toFixed(1)}%</div>
                             <div style={{ fontSize: 11, color: "#64748b" }}>confidence</div>
                           </div>
                         </div>

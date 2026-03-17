@@ -95,7 +95,7 @@ const Patients: React.FC = () => {
           <div style={{ display: "flex", gap: 6 }}>
             {(["All", "High", "Medium", "Low"] as const).map((r) => (
               <button key={r} onClick={() => setRiskFilter(r)}
-                style={{ padding: "10px 16px", borderRadius: 10, border: "none", background: riskFilter === r ? (r === "High" ? "rgba(239,68,68,0.25)" : r === "Medium" ? "rgba(251,191,36,0.25)" : r === "Low" ? "rgba(34,197,94,0.25)" : "rgba(59,130,246,0.25)") : "rgba(15,23,42,0.8)", color: riskFilter === r ? (r === "High" ? "#fca5a5" : r === "Medium" ? "#fcd34d" : r === "Low" ? "#86efac" : "#93c5fd") : "#64748b", cursor: "pointer", fontSize: 13, fontWeight: 600, border: "1px solid rgba(30,41,59,0.4)" }}>
+                style={{ padding: "10px 16px", borderRadius: 10, background: riskFilter === r ? (r === "High" ? "rgba(239,68,68,0.25)" : r === "Medium" ? "rgba(251,191,36,0.25)" : r === "Low" ? "rgba(34,197,94,0.25)" : "rgba(59,130,246,0.25)") : "rgba(15,23,42,0.8)", color: riskFilter === r ? (r === "High" ? "#fca5a5" : r === "Medium" ? "#fcd34d" : r === "Low" ? "#86efac" : "#93c5fd") : "#64748b", cursor: "pointer", fontSize: 13, fontWeight: 600, border: "1px solid rgba(30,41,59,0.4)" }}>
                 {r}
               </button>
             ))}
