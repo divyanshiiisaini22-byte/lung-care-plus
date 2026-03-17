@@ -1,0 +1,35 @@
+# Python
+backend/venv/
+backend/__pycache__/
+backend/**/__pycache__/
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+*.egg-info/
+
+# Environment & secrets
+backend/.env
+.env
+.env.*
+
+# Database (local dev only — don't commit SQLite file)
+backend/*.db
+
+# Node
+frontend/lungcare-frontend/node_modules/
+frontend/lungcare-frontend/dist/
+frontend/lungcare-frontend/.env.local
+frontend/lungcare-frontend/.env.production
+
+# Build artifacts
+dist/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
