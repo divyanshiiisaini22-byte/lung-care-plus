@@ -16,14 +16,6 @@ app = FastAPI(
     openapi_url="/api/openapi.json",
 )
 
-@app.get("/")
-def root():
-    return {"message": "backend is working"}
-
-@app.get("/health")
-def health():
-    return {"status": "ok"}
-
 # ── CORS ────────────────────────────────────────────────────────────────────
 app.add_middleware(
     CORSMiddleware,
